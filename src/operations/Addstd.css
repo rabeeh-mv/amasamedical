@@ -1,0 +1,38 @@
+.addst{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form{
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 16px;
+}
+.form input{
+    width: 90%;
+    height: 30px;
+    margin-bottom: 4px;
+    margin-left: 10px;
+  
+}
+.form label{
+    font-size: larger;
+    padding-left: 10px;
+}
+.submit{
+    margin: 10px;
+}
+.submit .sub-btn{
+    width: 90%;
+    height: 50px;
+    background-color: rgb(28, 152, 9);
+   border: none;
+   border-radius: 10px;
+   color: white;
+   font-size: larger;
+}
