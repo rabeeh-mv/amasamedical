@@ -3,7 +3,7 @@ import { db } from '../firebase'
 import { collection ,addDoc,getDocs ,deleteDoc ,doc , updateDoc} from 'firebase/firestore'
 import './hospital.css'
 
-function hospitals() {
+function Hospitals() {
     const [name, setName]=useState("")
     const [number, setNumber]=useState("")
     const [hospitals , setHospitals]= useState([])
@@ -120,7 +120,7 @@ const deletHospital = async (docId) => {
                 {hospitals.map((hospital, index)=>(
                     <div className='hpital-box' key={index}>{index+1 }
                        <h2>Name : {hospital.name} </h2>  
-                       <h4>number : {hospital.number} </h4> 
+                        <h4>number : {hospital.number} </h4> 
                         <button onClick={()=>editHospital(hospital)}> edit </button> 
                         <button onClick={()=>deletHospital(hospital.id)}> delete </button>
                     </div>
@@ -132,4 +132,4 @@ const deletHospital = async (docId) => {
   )
 }
 
-export default hospitals
+export default Hospitals

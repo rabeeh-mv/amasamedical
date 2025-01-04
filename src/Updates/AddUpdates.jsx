@@ -9,6 +9,7 @@ import {
   updateDoc,
   doc,
 } from "firebase/firestore";
+import DisplayUpdates from "./DisplayUpdates";
 
 function AddUpdates() {
   const [studentId, setStudentId] = useState(""); // Manually entered Student ID
@@ -140,6 +141,7 @@ function AddUpdates() {
         />
       </div>
       <button onClick={addUpdate}>Add Update</button>
+      <DisplayUpdates/>
     </div>
   );
 }

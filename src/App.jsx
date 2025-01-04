@@ -1,22 +1,12 @@
 import { useState } from 'react'
-
-
 import './App.css'
-import Hospital from './operations/hospitals'
-
-
-import Addstd from './operations/Addstd'
-import AddUpdates from './operations/AddUpdates'
-
+import Admin from './operations/admin'
 function App() {
 
   return (
-    <>
-    <AddUpdates/>
-    {/* <Addstd/> */}
-    {/* <Hospital/> */}
-
-    </>
+<>
+<Admin/>
+</>
   )
 }
 
