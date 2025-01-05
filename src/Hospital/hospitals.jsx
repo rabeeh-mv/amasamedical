@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { db } from '../firebase'
 import { collection ,addDoc,getDocs ,deleteDoc ,doc , updateDoc} from 'firebase/firestore'
-import './hospital.css'
 
 function Hospitals() {
     const [name, setName]=useState("")
