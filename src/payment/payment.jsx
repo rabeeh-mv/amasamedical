@@ -47,7 +47,7 @@ function payment() {
     }
   return (
     <div>
-        <h2 className="block mb-2 text-xl font-medium text-gray-900 dark:text-white">ADD PAYMENTS</h2>
+        <h2 className="block mb-2 text-center text-xl font-medium text-gray-900 dark:text-white">ADD PAYMENTS</h2>
         <div className="max-w-sm mx-auto">
             <div className='mb-4 mt-7'>
             <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white" htmlFor="">student id</label>

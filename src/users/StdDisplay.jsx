@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { db } from "../firebase";
 import { collection, getDocs, } from "firebase/firestore";
+import '../App.css'
 
 function StdDisplay({Addstd,updateStd, setStudentToEdit }) {
   const [students, setStudents] = useState([]);

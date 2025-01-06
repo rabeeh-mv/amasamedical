@@ -20,16 +20,16 @@ function admin() {
           <h4 className=' text-xl font-semibold '>Add student </h4>
           <FontAwesomeIcon className='troke-2 text-4xl scale-90 ' icon={faUser}/>
           </div>
-          <div className="h-20 w-full bg-white m-2 sm:m-6 border-b-2 sm:border-b-4 sm:w-1/5 sm:h-24 border-yellow-500 flex justify-around items-center"onClick={()=>list('hospital')}>
-          <h4 className='text-xl font-semibold p'>Add hospital</h4>
-          <FontAwesomeIcon className=' troke-2 text-4xl scale-80 ' icon={faHospital}/></div>
+          <div className="h-20 w-full bg-white m-3 sm:m-6 border-b-2 sm:border-b-4 sm:w-1/5 sm:h-24 border-yellow-500 flex justify-around items-center"onClick={()=>list('Updates')}>
+          <h4 className='text-xl font-semibold '>Add Updates</h4>
+          <FontAwesomeIcon className=' troke-2 text-4xl scale-90 ' icon={faPlusSquare }/></div>
           <div className="h-20 w-full bg-white m-2 sm:m-6 border-b-2 sm:border-b-4 sm:w-1/5 sm:h-24 border-yellow-500 flex justify-around items-center"onClick={()=>list('payment')}>
           <h4 className='text-xl font-semibold '>Payment</h4>
           <FontAwesomeIcon className=' troke-2 text-4xl scale-80' icon={faMoneyBillAlt}/>
           </div>
-          <div className="h-20 w-full bg-white m-3 sm:m-6 border-b-2 sm:border-b-4 sm:w-1/5 sm:h-24 border-yellow-500 flex justify-around items-center"onClick={()=>list('Updates')}>
-          <h4 className='text-xl font-semibold '>Add Updates</h4>
-          <FontAwesomeIcon className=' troke-2 text-4xl scale-90 ' icon={faPlusSquare }/></div>
+          <div className="h-20 w-full bg-white m-2 sm:m-6 border-b-2 sm:border-b-4 sm:w-1/5 sm:h-24 border-yellow-500 flex justify-around items-center"onClick={()=>list('hospital')}>
+          <h4 className='text-xl font-semibold'>Add hospital</h4>
+          <FontAwesomeIcon className=' troke-2 text-4xl scale-80 ' icon={faHospital}/></div>
       </div>
       <div className='mt-6'>
       {activeCombonet === 'dashboard' && <Dashboard/>}

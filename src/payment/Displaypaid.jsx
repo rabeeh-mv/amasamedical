@@ -78,15 +78,23 @@ function Displaypaid() {
 
   return (
     <>
-      <div>Display Paid</div>
-      <div className="paycard">
+      <div className="  text-center text-md mb-2 mt-4">Display Paid</div>
+      <div className="flex flex-col items-center content-center h-96 overflow-scroll bg-gray-200 p-4">
         {payments.length > 0 ? (
           payments.map((pay) => (
-            <div key={pay.docId} className="pay-item">
-              <h4>Student ID: {pay.studentId}</h4>
-              <h4>Paid Amount: {pay.paid}</h4>
-              <button onClick={() => deletePayment(pay.docId)}>Delete</button>
-            </div>
+           <div key={pay.docId} className=" m-1 w-5/12 p-3 bg-white border center border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div className="flex flex-row items-center justify-between">
+              <div className="">
+                <h4 className="text-md tracking-tight text-gray-800 dark:text-white">Student ID: {pay.studentId}</h4>
+              <h4 className="text-sm tracking-tight text-gray-800 dark:text-white">Date : {pay.date}</h4>
+                </div>
+                <div className="flex">
+              <h4 className="mr-4 tracking-tight text-gray-900 dark:text-white ">Paid Amount : <span className="text-bold text-3xl"> ₹{pay.paid}</span> </h4>
+            <button className="px-2 font-medium text-blue-600 dark:text-blue-500 hover:text-red-200 hover:underline" onClick={() => deletePayment(pay.docId)}>Delete</button>
+                </div>
+           </div>
+          </div>
+         
           ))
         ) : (
           <p>No payments found.</p>
